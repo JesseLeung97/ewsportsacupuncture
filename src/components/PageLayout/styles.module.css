@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+}
+.width_wrapper {
+    margin: 0 auto;
+    width: clamp(300px, 90%, 900px);
+    background: lightcoral;
+}

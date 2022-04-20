@@ -1,0 +1,10 @@
+.container {
+    height: 33px;
+    width: 33px;
+}
+.hover { 
+}
+.hover:hover {
+    background: var(--main-hover-color);
+    transition: var(--main-transition);
+}

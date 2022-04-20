@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby develop & npm run start:css-types",
+    "start:css-types": "nodemon -e .module.css -x \"npx gct-run\"",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -16,13 +17,17 @@
   },
   "dependencies": {
     "gatsby": "^4.10.3",
+    "gatsby-plugin-image": "^2.12.1",
+    "gatsby-source-filesystem": "^4.12.1",
+    "gatsbycsstypes": "^1.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
-    "@types/react": "^17.0.43",
+    "@types/react": "^17.0.44",
     "@types/react-dom": "^17.0.14",
+    "nodemon": "^2.0.15",
     "typescript": "^4.6.3"
   }
 }

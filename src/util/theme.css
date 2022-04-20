@@ -1,0 +1,7 @@
+:root {
+    --main-bg-color: #FFFCF2;
+    --main-theme-color: #962340;
+    --main-highlight-color: #28232A;
+    --main-hover-color: #D782BA;
+    --main-transition: 0.2s ease-out all;
+}
