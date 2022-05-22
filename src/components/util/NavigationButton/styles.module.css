@@ -1,0 +1,8 @@
+.hover { 
+    color: var(--main-text-color);
+    transition: var(--main-transition);
+}
+.hover:hover {
+    cursor: pointer;
+    color: var(--main-hover-color);
+}

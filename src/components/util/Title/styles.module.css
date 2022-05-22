@@ -1,0 +1,38 @@
+.title {
+    font-weight: 700;
+}
+.small {
+    font-size: var(--title-font-size-small)
+}
+.medium {
+    font-size: var(--title-font-size-medium);
+}
+.large {
+    font-size: var(--title-font-size-large);
+}
+.left {
+}
+.right {
+}
+.center {
+}
+.sp_left {
+    text-align: left;
+}
+.sp_right {
+    text-align: right;
+}
+.sp_center {
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    .left {
+        text-align: left;
+    }
+    .right {
+        text-align: right;
+    }
+    .center {
+        text-align: center;
+    }
+}

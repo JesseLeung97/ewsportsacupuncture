@@ -1,0 +1,19 @@
+.container {
+    height: 33px;
+    width: 33px;
+    display: grid;
+    place-items: center;
+    border-radius: 100px;
+    border: 2px solid black;
+}
+.inner_container {
+    height: 22px;
+    width: 22px;
+    object-fit: contain;
+}
+.hover { 
+}
+.hover:hover {
+    background: var(--main-hover-color);
+    transition: var(--main-transition);
+}

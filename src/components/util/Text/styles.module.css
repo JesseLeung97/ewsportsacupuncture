@@ -1,0 +1,35 @@
+.small {
+    font-size: var(--font-size-small);
+}
+.medium {
+    font-size: var(--font-size-medium);
+}
+.large {
+    font-size: var(--font-size-large);
+}
+.left {
+}
+.right {
+}
+.center {
+}
+.sp_left {
+    text-align: left;
+}
+.sp_right {
+    text-align: right;
+}
+.sp_center {
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    .left {
+        text-align: left;
+    }
+    .right {
+        text-align: right;
+    }
+    .center {
+        text-align: center;
+    }
+}

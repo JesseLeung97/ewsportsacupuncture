@@ -1,12 +1,13 @@
 import React from "react";
-import { PageLayout } from "../components/PageLayout";
+import { PageLayout } from "../components/util/PageLayout";
+import { ContactForm } from "../components/ContactForm";
 
 const ServicesPage = () => {
     return (
         <PageLayout>
-            <h2>Services</h2>
+            <ContactForm />
         </PageLayout>
-    )
+    );
 }
 
 export default ServicesPage;

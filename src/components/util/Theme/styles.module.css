@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+:root {
+    --main-text-color: #28232A;
+    --main-text-color-faded: #9590A8;
+    --main-bg-color: #FBF5F3;
+    --main-theme-color: #962340;
+    --main-highlight-color: #28232A;
+    --main-hover-color: #D782BA;
+    --main-transition: 0.3s ease-out all;
+    --cubic_bezier-transition: 0.5s cubic-bezier(0.9, 0, 0.1, 1);
+    --font-size-small: clamp(14px, 1.5vw, 18px);
+    --font-size-medium: clamp(18px, 2.5vw, 24px);
+    --font-size-large: clamp(24px, 3.5vw, 30px);
+    --title-font-size-small: clamp(24px, 2.5rem, 30px);
+    --title-font-size-medium: clamp(30px, 3.5rem, 36px);
+    --title-font-size-large: clamp(36px, 4.5vw, 42px);
+    --header-footer-width: 91.7vw;
+    --content-width: 91.7vw;
+}
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    margin: 0;
+    background: var(--main-bg-color);
+}
+a {
+    all: unset;
+}

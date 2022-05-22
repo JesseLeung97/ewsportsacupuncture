@@ -1,0 +1,45 @@
+.block {
+    display: block;
+}
+.inline_block {
+    display: inline-block;
+}
+.small { 
+}
+.medium {
+}
+.large { 
+}
+.sp_small {
+    height: 35px;
+    width: 35px;
+}
+.sp_medium {
+    height: 60px;
+    width: 60px;
+}
+.sp_large {
+    height: 85px;
+    width: 85px;
+}
+.hover {
+
+}
+.hover:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    .small {
+        height: 50px;
+        width: 50px;
+    }
+    .medium {
+        height: 75px;
+        width: 75px;
+    }
+    .large {
+        height: 100px;
+        width: 100px;
+    }
+}

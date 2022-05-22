@@ -1,0 +1,13 @@
+.width_wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+.footer_width_wrapper {
+    margin: 0 auto;
+    width: var(--header-footer-width);
+}
+.content_width_wrapper {
+    margin: 100px auto 0 auto;
+    width: var(--content-width);
+    background: var(--main-bg-color);
+}

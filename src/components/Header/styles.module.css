@@ -1,9 +1,126 @@
-.red_test {
-    background: red;
+.container {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: grid;
+    place-items: center;
+    transition: var(--cubic_bezier-transition);
+    background: var(--main-bg-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
 }
-.blue_test {
-    background: blue;
+.layout {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100vw);
+    background: var(--main-bg-color);
+    transition: var(--cubic_bezier-transition);
 }
-.green_test {
-    color: green;
+.layout_show {
+    transform: translateX(0%);
+}
+.layout_adjust {
+}
+.nav_items {
+    width: var(--header-footer-width);
+    margin: 80px auto 0 auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav_item {
+    display: grid;
+    place-items: center;
+}
+.logo_container {
+    display: none;
+}
+.sp_menu {
+    width: var(--header-footer-width);
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    transition: var(--cubic_bezier-transition);
+}
+.sp_menu_hide {
+    top: 30px;
+}
+.sp_logo {
+    transition: var(--cubic_bezier-transition);
+}
+.sp_logo_hide {
+    opacity: 0;
+}
+.sp_menu_toggle {
+    height: 35px;
+    width: 35px;
+    background: lightgreen;
+}
+.header_hide {
+    top: -100px;
+}
+.vertical_align {
+}
+.show_menu_top {
+    top: 0;
+}
+
+
+@media screen and (min-width: 600px) {
+    .container {
+        height: 100px;
+        right: unset;
+    }
+    .layout {
+        height: 100px;
+        width: var(--header-footer-width);
+        flex-direction: row;
+        justify-content: space-between;
+        left: 50%;
+        background: none;
+        transform: translateX(-50%);
+    }
+    .layout_adjust {
+        margin-top: unset;
+        top: -100px;
+    }
+    .logo_container {
+        display: flex;
+        height: 100%;
+    }
+    .nav_items {
+        width: 100%;
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .sp_menu {
+        display: none;
+    }
+    .header_hide {
+        top: -100px;
+    }
+    .nav_item {
+
+    }
+    .logo_container {
+        display: flex;
+        height: 100%;
+        gap: 10px;
+    }
+    .vertical_align {
+        margin: auto 0;
+    }
+    .show_menu_top {
+        top: 0;
+    }
 }
